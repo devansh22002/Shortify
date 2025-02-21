@@ -1,0 +1,63 @@
+.login-card {
+    height: 35vh;
+    width: 30vw;
+    border: 1px solid black;
+    margin: 0 auto;
+    top: 25%;
+    left:35%;
+    justify-content: center;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.signup-heading {
+    top: 20px;
+    padding-top: 5px;
+    font-size: 1.25rem;
+    margin-left: 10rem;
+}
+
+.signup-form-card {
+    margin-top:15px;
+}
+
+.email-text {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+
+.mail-input-value {
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.pass-text {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+
+.pass-input-value {
+    margin: 10px;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 2rem;
+    margin-left: 100px;
+    background-color: aquamarine;
+    width: 60%;
+}
+
+.a {
+    text-decoration: none;
+}
