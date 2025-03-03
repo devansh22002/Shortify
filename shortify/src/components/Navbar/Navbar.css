@@ -30,3 +30,8 @@ margin-top: 10px;
     transition: .3s ease;
     cursor: pointer;
 }
+
+
+.link-text {
+    pointer-events: all;
+}

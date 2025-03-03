@@ -1,30 +1,29 @@
 import React from "react";
 import "./Signup.css";
 
-const Signup = () => {
+const Signup = ({switchToLogin}) => {
 
   return (
-    <>
-      <div className="signup">
-        <div className="signup head">
-            <h2>Signup </h2>
-        </div> <br />
-        <form>
-            <span className="emailid">
-                <h5>Email ID</h5>
-            </span> <br />
+<div className="Signup-card">
+                
+                <h2 className="signup-heading">Signup</h2>
+                <form action="post" className="signup-form-card">
+                    <p className="email-text">Email</p>
+                    <input type='mail' className="mail-input-value" required/>
+                    <p className="pass-text">Password</p>
+                    <input type="password" className="pass-input-value" minLength={8} maxLength={16} required/> 
 
-            <input type="mail" required></input> <br />
 
-            <span className="password">
-                <h5>Password</h5>
-            </span> <br />
-            <input className="pass" type="password" min={8} max={16}></input>
-            <br />
-            <button className="btn"> Signup </button>
-        </form>
-      </div>
-    </>
+                        <div className="login-btn">
+                        <button type='submit' className="login-button">Login</button>
+                        </div>
+                </form>
+
+                <p className="signup-link">
+        Already have an account?{" "}
+        <span onClick={switchToLogin} className="link-text">Login</span>
+      </p>
+            </div>
   );
 };
 

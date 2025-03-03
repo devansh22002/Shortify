@@ -1,6 +1,6 @@
 .login-card {
-    height: 35vh;
-    width: 30vw;
+    height: 40vh;
+    width: 28vw;
     border: 1px solid black;
     margin: 0 auto;
     top: 25%;
@@ -8,13 +8,6 @@
     justify-content: center;
     position: fixed;
     border-radius: 10px;
-}
-
-.signup-heading {
-    top: 20px;
-    padding-top: 5px;
-    font-size: 1.25rem;
-    margin-left: 10rem;
 }
 
 .signup-form-card {
@@ -60,4 +53,31 @@
 
 .a {
     text-decoration: none;
+}
+
+.login-heading {
+    top: 20px;
+    padding-top: 5px;
+    font-size: 1.25rem;
+    margin-left: 12rem;
+}
+
+.login-button {
+    margin-left: 20px;
+    width: 80%;
+    border-radius: 10px;
+    height: 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(76, 176, 215);
+    margin-top: 5px;
+}
+
+.signup-link {
+    margin-top: 10px;
+    margin-left: 1.2rem;
+}
+
+.link-text{
+    color: blue;
+    cursor: pointer;
 }
