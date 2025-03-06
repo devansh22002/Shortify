@@ -26,6 +26,9 @@
     height: 1.5rem;
     width: 80%;
     margin-left: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
 }
 
 .pass-text {
@@ -40,6 +43,9 @@
     height: 1.5rem;
     width: 80%;
     margin-left: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
 }
 
 .btn{
@@ -56,10 +62,10 @@
 }
 
 .login-heading {
-    top: 20px;
     padding-top: 5px;
     font-size: 1.25rem;
     margin-left: 12rem;
+    margin-top: 1rem;
 }
 
 .login-button {
@@ -73,8 +79,8 @@
 }
 
 .signup-link {
-    margin-top: 10px;
-    margin-left: 1.2rem;
+    margin-top: 20px;
+    margin-left: 1.3rem;
 }
 
 .link-text{
