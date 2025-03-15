@@ -7,12 +7,7 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors({
-
-origin: 'http://localhost:5173/',
-method: 'POST',
-credentials: true
-}));
+app.use(cors());
 
 
 app.use(express.json());

@@ -17,7 +17,7 @@ const handleLogin = async (e) => {
 
   try {
     //send a post request to the backend login endpoint
-    const response = await axios.post('http://localhost:5000/Routes/auth.js',{username: email, password});
+    const response = await axios.post('http://localhost:5000/api/auth/login',{username: email, password});
     //save the token in localstorage
     localStorage.setItem('token',response.data.token);
     window.location.href = '/dashboard';

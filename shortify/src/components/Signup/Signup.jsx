@@ -10,7 +10,7 @@ const Signup = ({ switchToLogin }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://improved-space-umbrella-jvjq69j4gvh7gj-5000.app.github.dev/api/auth/signup", {
+      const response = await fetch("http://localhost:5000/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }) // Fix: Send username

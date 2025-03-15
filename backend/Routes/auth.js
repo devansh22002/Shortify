@@ -5,12 +5,14 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../Models/Users');
+const authMiddleware = require('../Middlewares/authMiddleware');
 
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET || "default_secret_key"; // ✅ Added fallback
 
 // ✅ Signup Route
 router.post('/signup', async (req, res) => {
+    
     const { username, password } = req.body; // ✅ Extract username & password
     console.log(username, password)
     // ✅ Validate input
@@ -46,13 +48,19 @@ router.post('/login', async (req, res) => {
 
     // ✅ Compare password
     const isMatch = await bcrypt.compare(password, user.password);
+
     if (!isMatch) return res.status(400).json({ message: "Invalid credentials." });
 
     // ✅ Generate JWT token
     const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '1h' });
     console.log(token);
-
     res.json({ token });
+
+
+        router.get('/dashboard', authMiddleware, (req, res) => {
+            res.json({username: req.user.username, message: "Welcome to the dashboard!"});
+        });
+
 });
 
 module.exports = router;
